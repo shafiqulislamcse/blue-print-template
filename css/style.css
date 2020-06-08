@@ -1,0 +1,414 @@
+/*global css*/
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin: auto;
+}
+body{
+	font-family: sans-serif;
+}
+
+/*header css*/
+
+header{
+	background-color: #121B2A;
+	overflow: hidden;
+	-webkit-box-shadow: 0px 10px 12px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 10px 12px 1px rgba(0,0,0,0.75);
+	box-shadow: 0px 10px 12px 1px rgba(0,0,0,0.75);
+	position: relative;
+}
+header .brand-name{
+	width: 15%;
+	float: left;
+}
+header .brand-name img{
+	width: 100%;
+	padding: 12px 0;
+}
+header nav{
+	width: 85%;
+	float: left;
+}
+header nav ul{
+	float: right;
+	margin-top: 58px;
+}
+header nav ul li{
+	display: inline;
+}
+header nav ul li:last-child a{
+	padding-right: 0;
+}
+header nav ul li a{
+	font-style: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0 24px;
+	transition: all 0.5s ease;
+}
+header nav ul li a:hover, header nav ul li a.active{
+	color: #0272B3;
+}
+header .login {
+	position: absolute;
+	right: 100px;
+	width: 25%;
+	text-align: center;
+}
+header .login .client{
+	width: 50%;
+	float: left;
+	background-color: #fff;
+}
+header .login .client a {
+	font-size: 14px;
+	color: #000;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 1;
+	display: inline-block;
+	padding: 8px;
+	transition: all 0.5s ease;
+}
+header .login .client a:hover{
+	color: #0078BD;
+}
+header .login .employee{
+	width: 50%;
+	float: left;
+	background-color: #0078BD;
+}
+header .login .employee a{
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 1;
+	display: inline-block;
+	padding: 8px;
+	transition: all 0.5s ease;
+}
+header .login .employee a:hover{
+	color: #000;
+}
+
+
+/*slider css*/
+.slider-area{
+	
+}
+.slider .slider-single, .slider .slider-single img{
+	height: 80vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	
+}
+
+.slider .slider-single .slider-text{
+	margin-top: 180px;
+	width: 100%;
+} 
+.slider .slider-single .slider-text .block{
+	width: 50%;
+	padding-left: 0px;
+}
+.slider .slider-single .slider-text .block h3{
+	font-size: 35px;
+	font-weight: 300;
+	color: #fff;
+	text-transform: capitalize;
+}
+.slider .slider-single .slider-text .block h1{
+	font-size: 40px;
+	color: #0074B7;
+	text-transform: capitalize;
+}
+.slider .slider-single .slider-text .block p{
+	font-size: 18px;
+	text-transform: capitalize;
+	color: #fff;
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+.slider .slider-single .slider-text .block a{
+	font-size:20px;
+	color: #5B5B5B;
+	text-transform: uppercase;
+	display: inline-block;
+	padding:12px 25px;
+	text-decoration: none;
+	background-color: #fff;
+	border-radius: 5px;
+	transition: 0.5s ease;
+}
+.slider .slider-single .slider-text .block a i{
+	color: #0078BB;
+}
+.slider .slider-single .slider-text .block a:hover{
+	color:  #0074B7;
+}
+
+
+/*services css*/
+.services{
+	padding: 30px 0;
+	background-color: #121B2C;
+	-webkit-box-shadow: 0px -10px 12px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px -10px 12px 1px rgba(0,0,0,0.75);
+	box-shadow: 0px -10px 12px 1px rgba(0,0,0,0.75);
+}
+.services .services-content{
+	width: 100%;
+	overflow: hidden;
+}
+.services .services-content .item{
+	width: 33.33%;
+	float: left;
+	padding: 8px;
+	border-left: 1px solid rgba(26,36,48,0.9);
+	padding: 0px 30px;
+
+	
+}
+.services .services-content .item:first-child{
+	border-left: none;
+}
+.services .services-content .item:last-child{
+	margin-right: 0;
+}
+.services .services-content .item .item-top{
+	width: 100%;
+	overflow: hidden;
+}
+.services .services-content .item .item-top .icon{
+	width: 20%;
+	float: left;
+}
+.services .services-content .item .item-top .icon img{
+	width: 100%;
+}
+.services .services-content .item .item-top .title{
+	width: 75%;
+	float: left;
+	margin-left: 5%;
+}
+.services .services-content .item .item-top .title h2 {
+	font-size: 28px;
+	font-weight: 300;
+	color: #fff;
+}
+.services .services-content .item .item-top .title h1 {
+	font-size: 28px;
+	font-weight: 600;
+	color: #0078BB;
+	text-transform: capitalize;
+	line-height: 40px;
+}
+.services .services-content .item .item-bottom p {
+	font-size: 16px;
+	font-weight: 300;
+	color: #fff;
+	line-height: 24px;
+	text-align: justify;
+	margin-top: 20px;
+}
+
+
+/*about css*/
+.about{
+	padding: 30px 0;
+	background-color: #040811;
+}
+.about .about-content{
+	width: 100%;
+	overflow: hidden;
+}
+.about .about-content .about-item{
+	width: 33.33%;
+	float: left;
+	padding: 0 20px;
+}
+.about .about-content .about-item h2 {
+	font-size: 22px;
+	font-weight: 400;
+	color: #fff;
+}
+.about .about-content .about-item h2 span{
+	color: #0078BD;
+}
+.about .about-content .address-box{
+	padding-top: 23px;
+}
+.about .about-content .about-item .address{
+	font-size: 14px;
+	color: #fff;
+	font-weight: 300;
+	text-transform: capitalize;
+	padding-right: 100px;
+	line-height: 22px;
+	margin-top: 10px;
+}
+.about .about-content .about-item table {
+	width: 100%;
+	color: #fff;
+	font-size: 14px;
+	margin-top: 20px;
+}
+.about .about-content .about-item .web{
+	font-size: 14px;
+	color: #fff;
+	font-weight: 300;
+	text-transform: capitalize;
+	padding-right: 200px;
+	padding-left: 20px;
+	line-height: 22px;
+	margin-top: 20px;
+}
+
+.about .about-content .about-item .talkbox{
+	width: 100%;
+	padding: 23px;
+	background-color: #0C1019;
+	border-radius: 5px;
+	position: relative;
+}
+.about .about-content .about-item .talkbox p{
+	font-size: 14px;
+	color: #fff;
+	font-weight: 300;
+	text-transform: capitalize;
+	line-height: 22px;
+	margin-top: 10px;
+}
+.about .about-content .about-item .talkbox::before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 0px solid transparent;
+	border-right: 65px solid transparent;
+	border-top: 30px solid #0C1019;
+	left: 228px;
+	top: 98%;
+}
+.about .about-content .about-item .image{
+	width: 40%;
+	float: left;
+}
+.about .about-content .about-item .image img{
+	width: 100%;
+}
+.about .about-content .about-item  .text{
+	width: 55%;
+	float: left;
+	margin-left: 5%;
+}
+.about .about-content .about-item .text h3 {
+	font-size: 18px;
+	font-weight: 300;
+	color: #fff;
+	text-transform: capitalize;
+}
+.about .about-content .about-item .text h1 {
+	font-size: 25px;
+	font-weight: 600;
+	color: #0078BD;
+	text-transform: capitalize;
+	line-height: 45px;
+}
+.about .about-content .about-item .text .about-text-icon{
+	background-color: #fff;
+	width: 100%;
+	margin-top: 20px;
+	border-radius: 8px;
+	overflow: hidden;
+	padding-right: 10px;
+}
+.about .about-content .about-item .text .about-text-icon .icon{
+	width: 20%;
+	float: left;
+	text-align: center;
+}
+.about .about-content .about-item .text .about-text-icon .icon i {
+	font-size: 40px;
+	margin-top: 6px;
+}
+.about .about-content .about-item .text .about-text-icon .icon-text{
+	width: 75%;
+	float: left;
+	margin-left: 5%;
+}
+.about .about-content .about-item .text .about-text-icon .icon-text span {
+	font-size: 12px;
+	text-transform: capitalize;
+	font-weight: 600;
+}
+.about .about-content .about-item .text .about-text-icon .icon-text h2 {
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 35px;
+	color: #000;
+}
+
+/*footer css*/
+footer{
+	padding: 20px 0;
+	background-color: #121B2C;
+	overflow: hidden;
+}
+footer .copyright{
+	width: 70%;
+	float: left;
+}
+footer .copyright ul{
+	list-style-type: none;
+	margin-top: 25px;
+}
+footer .copyright ul li{
+	display: inline;
+}
+footer .copyright ul li a{
+	font-size: 16px;
+	font-weight: 400;
+	color: #fff;
+	display: inline-block;
+	text-transform: capitalize;
+	text-decoration: none;
+	padding: 0 10px;
+	border-right: 1px solid #fff;
+	transition: 0.5s ease;
+}
+footer .copyright ul li:first-child a{
+	padding-left: 0;
+}
+footer .copyright ul li:last-child a{
+	border-right: none;
+}
+footer .copyright ul li a:hover{
+	color: #007AC4;
+}
+footer .copyright p {
+	font-size: 16px;
+	font-weight: 300;
+	text-transform: capitalize;
+	color: #fff;
+	margin-top: 15px;
+}
+footer .footer-img{
+	width: 30%;
+	float: left;
+}
+footer .footer-img img{
+	width: 100%;
+}
